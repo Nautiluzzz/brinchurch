@@ -1,4 +1,16 @@
 Brinchurch::Application.routes.draw do
+  get "home/index"
+
+  get "home/bio"
+
+  get "home/contact"
+
+  get "home/resume"
+
+  get "home/how_i_work"
+
+  get "home/links"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
