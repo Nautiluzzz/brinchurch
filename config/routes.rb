@@ -1,6 +1,8 @@
 Brinchurch::Application.routes.draw do
   get "home/index"
 
+  get "home/sitemap"
+
   get "home/bio"
 
   get "home/contact"
