@@ -1,17 +1,12 @@
 Brinchurch::Application.routes.draw do
-  get "home/index"
 
-  get "home/sitemap"
-
-  get "home/bio"
-
-  get "home/contact"
-
-  get "home/resume"
-
-  get "home/how_i_work"
-
-  get "home/links"
+  root :to => 'home#index'
+  get "sitemap" => 'home#sitemap'
+  get "bio" => 'home#bio'
+  get "contact" => 'home#contact'
+  get "resume" => 'home#resume'
+  get "how-i-work" => 'home#how_i_work'
+  get "links" => 'home#links'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
