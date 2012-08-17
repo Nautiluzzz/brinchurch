@@ -20,7 +20,7 @@ class HomeController < ApplicationController
   end
 
   def how_i_work
-    @title = 'How i work'
+    @title = 'How I Work'
   end
 
   def links

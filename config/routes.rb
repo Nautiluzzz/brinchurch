@@ -5,7 +5,7 @@ Brinchurch::Application.routes.draw do
   get "bio" => 'home#bio'
   get "contact" => 'home#contact'
   get "resume" => 'home#resume'
-  get "how-i-work" => 'home#how_i_work'
+  get "how_i_work" => 'home#how_i_work'
   get "links" => 'home#links'
 
   # The priority is based upon order of creation:
