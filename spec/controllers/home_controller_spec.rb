@@ -81,7 +81,7 @@ describe HomeController do
     it "should have the right title" do
       get 'how_i_work'
       response.should have_selector("title",
-                                    :content => @base_title + " | How i work")
+                                    :content => @base_title + " | How I Work")
     end
   end
 

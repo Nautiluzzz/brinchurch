@@ -1,5 +1,25 @@
 Brinchurch::Application.routes.draw do
 
+  get "admin/index"
+
+  get "admin/signin"
+
+  get "code_gallery/index"
+
+  get "code_gallery/show"
+
+  get "code_gallery/showAdmin"
+
+  get "code_gallery/create"
+
+  get "code_gallery/new"
+
+  get "code_gallery/edit"
+
+  get "code_gallery/update"
+
+  get "code_gallery/destroy"
+
   root :to => 'home#index'
   get "sitemap" => 'home#sitemap'
   get "bio" => 'home#bio'
