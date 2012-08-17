@@ -8,28 +8,37 @@
   <%= stylesheet_link_tag    "blueprint/screen", :media => "screen" %>
   <%= stylesheet_link_tag    "blueprint/print", :media => "print" %>
   <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
-  <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+  <%= stylesheet_link_tag 'application', :media => 'screen' %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <div class="container">
-  <header>
-    <nav class="round">
-      <ul>
-        <li><%= link_to "Bio", '/bio' %></li>
-        <li><%= link_to "Resume", '/resume' %></li>
-        <li><%= link_to "How I work", '/how-i-work' %></li>
-        <li><%= link_to "Links", '/links' %></li>
-        <li><%= link_to "Contact", '/contact' %></li>
-        <li>TODO: Code gallery (Links by project)</li>
-        <li><%= link_to "Site map", '/sitemap' %></li>
-      </ul>
-    </nav>
+  <header class="round">
+    <h1>Brin Church</h1>
   </header>
   <section class="round">
-    <%= yield %>
+    <div class="container">
+      <nav class="span-4">
+        <ul>
+          <li><%= link_to "Bio", '/bio' %></li>
+          <li><%= link_to "Resume", '/resume' %></li>
+          <li><%= link_to "How I work", '/how-i-work' %></li>
+          <li><%= link_to "Links", '/links' %></li>
+          <li><%= link_to "Contact", '/contact' %></li>
+          <li>TODO: Code gallery (Links by project)</li>
+          <li><%= link_to "Site map", '/sitemap' %></li>
+        </ul>
+      </nav>
+      <div class="span-20 last">
+        <%= yield %>
+      </div>
+    </div>
   </section>
+  <footer class="round">
+    Brin Church Inc.<br/>
+    Design: Petruxa
+  </footer>
 </div>
 </body>
 </html>
