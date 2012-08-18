@@ -3,6 +3,10 @@ require 'spec_helper'
 describe CodeGalleryController do
   render_views
 
+  before(:each) do
+    @base_title = "Brin Church"
+  end
+
   describe "GET 'index'" do
     it "should be successful" do
       get 'index'

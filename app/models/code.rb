@@ -11,6 +11,9 @@
 
 class Code < ActiveRecord::Base
   attr_accessible :project, :code
+  validates(:project, :presence => true,
+            :length   => { :maximum => 255 })
+  validates(:code, :presence => true)
 
 
 
